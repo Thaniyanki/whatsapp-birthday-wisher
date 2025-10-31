@@ -785,7 +785,7 @@ def step9r_check_report_number_file():
 
 def step9s_verify_report_number():
     """Step 9s: Verify report number exists in the file."""
-    report_file_path = os.path.join(BOTS_DIR, "Report number")
+    report_file_path = os.path.join(BOTS_DIR, "venv", "report number")
     try:
         with open(report_file_path, 'r') as file:
             first_line = file.readline().strip()
@@ -807,7 +807,7 @@ def step9s_verify_report_number():
 
 def step9t_paste_report_number():
     """Step 9t: Paste report number into WhatsApp search field."""
-    report_file_path = os.path.join(BOTS_DIR, "Report number")
+    report_file_path = os.path.join(BOTS_DIR, "venv", "report number")
     
     while True:
         try:
