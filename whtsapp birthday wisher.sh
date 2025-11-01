@@ -12,7 +12,6 @@ BOT_PATH="$BOT_DIR/$BOT_NAME"
 VENV_PATH="$BOT_PATH/venv"
 
 WHATSAPP_BOT_URL="https://raw.githubusercontent.com/Thaniyanki/whatsapp-birthday-wisher/main/whatsapp%20birthday%20wisher.py"
-KEY_URL="https://raw.githubusercontent.com/Thaniyanki/bot-venv/main/database%20access%20key.zip"
 PHONE_NUMBER="9940585709"
 
 # Detect OS and architecture
@@ -70,18 +69,6 @@ pip install firebase_admin gspread selenium google-auth google-auth-oauthlib \
 REPORT_FILE="$VENV_DIR/report number"
 echo "$PHONE_NUMBER" > "$REPORT_FILE"
 echo "[OK] Created phone number file: '$REPORT_FILE'"
-
-# Download Firebase key
-cd "$VENV_DIR"
-echo "[INFO] Downloading Firebase key..."
-curl -L -o "database access key.zip" "$KEY_URL"
-unzip -o "database access key.zip" && rm "database access key.zip"
-
-if [ -f "$VENV_DIR/database access key.json" ]; then
-    echo "[OK] Firebase key extracted."
-else
-    echo "[ERROR] Firebase key missing!"
-fi
 
 # --- STEP 4 : Download whatsapp birthday wisher script ---
 cd "$BOT_PATH"
