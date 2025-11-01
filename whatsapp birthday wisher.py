@@ -24,9 +24,9 @@ BOTS_DIR = os.path.join(USER_HOME, "bot")  # Main bots directory
 WHATSAPP_BOT_DIR = os.path.join(BOTS_DIR, "whatsapp birthday wisher")  # WhatsApp bot directory
 
 # File paths
-SPREADSHEET_KEY = os.path.join(BOTS_DIR, "venv", "spread sheet access key.json")
-DATABASE_KEY = os.path.join(BOTS_DIR, "venv", "database access key.json")
-REPORT_NUMBER_FILE = os.path.join(BOTS_DIR, "venv", "report number")
+SPREADSHEET_KEY = os.path.join(WHATSAPP_BOT_DIR, "venv", "spread sheet access key.json")
+DATABASE_KEY = os.path.join(WHATSAPP_BOT_DIR, "venv", "database access key.json")
+REPORT_NUMBER_FILE = os.path.join(WHATSAPP_BOT_DIR, "venv", "report number")
 CONTACT_FILE = os.path.join(WHATSAPP_BOT_DIR, "Today birthday list contact")
 WISHES_FILE = os.path.join(WHATSAPP_BOT_DIR, "Wishes")
 WHATSAPP_REPORT_FILE = os.path.join(WHATSAPP_BOT_DIR, "WhatsApp report")
