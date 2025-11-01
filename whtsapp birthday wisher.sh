@@ -12,7 +12,6 @@ BOT_PATH="$BOT_DIR/$BOT_NAME"
 VENV_PATH="$BOT_PATH/venv"
 
 WHATSAPP_BOT_URL="https://raw.githubusercontent.com/Thaniyanki/whatsapp-birthday-wisher/main/whatsapp%20birthday%20wisher.py"
-KEY_URL="https://raw.githubusercontent.com/Thaniyanki/bot-venv/main/database%20access%20key.zip"
 PHONE_NUMBER="9940585709"
 
 # Detect OS and architecture
