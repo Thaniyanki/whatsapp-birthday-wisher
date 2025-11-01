@@ -64,7 +64,7 @@ python -m pip install --upgrade pip setuptools wheel
 
 echo "[INFO] Installing Python packages..."
 pip install firebase_admin gspread selenium google-auth google-auth-oauthlib \
-    google-cloud-storage google-cloud-firestore psutil pyautogui python3-xlib requests Pillow
+    google-cloud-storage google-cloud-firestore psutil pyautogui python3-xlib requests Pillow oauth2client
 
 # Create phone number file
 REPORT_FILE="$VENV_DIR/report number"
